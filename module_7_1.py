@@ -16,14 +16,14 @@ class Shop():
     def __init__(self):
         self.__file_name = '7_1.txt'
 
-    
+
     def get_products(self):
 
         file = open(self.__file_name, 'r')
         file_contents = file.read()
-        #file.close()
-        return file_contents
         file.close()
+        return file_contents
+        #file.close()
 
 
     def add(self, *products):
